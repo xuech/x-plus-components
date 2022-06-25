@@ -2,6 +2,7 @@
     <div>
         home
          <el-button type="primary" round>Primary</el-button>
+         <el-icon-edit></el-icon-edit>
 
     </div>
 </template>
