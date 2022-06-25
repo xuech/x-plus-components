@@ -9,6 +9,7 @@
                     v-for="(item, index) in Object.keys(ElIcons)"
                     :key="index"
                     class="item"
+                    @click="clickItem(item)"
                 >
                     <div class="icon">
                         <component :is="`el-icon-${toLine(item)}`"></component>
@@ -25,7 +26,7 @@
 <script setup lang="ts">
 import { watch, ref } from 'vue'
 import * as ElIcons from '@element-plus/icons-vue'
-
+import { useCopy } from '../../../hooks'
 import { toLine } from '../../../utils'
 
 const props = defineProps<{
@@ -55,6 +56,12 @@ watch(
     emits('update:visible', val)
   }
 )
+
+const clickItem = (item: string) => {
+  const text = `<el-icon-${toLine(item)} />`
+  useCopy(text)
+  emits('update:visible', !props.visible)
+}
 </script>
 
 <style lang="scss" scoped>
