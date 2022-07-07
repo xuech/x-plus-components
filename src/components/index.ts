@@ -5,6 +5,7 @@ import trend from './trend'
 import notification from './notification'
 import chooseCity from './chooseCity'
 import list from './list'
+import menu from './menu'
 
 const components = [
   chooseArea,
@@ -13,6 +14,7 @@ const components = [
   notification,
   chooseCity,
   list,
+  menu,
 ]
 export default {
   install(app: App) {
