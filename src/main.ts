@@ -6,11 +6,11 @@ import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 
 import { toLine } from './utils'
-// import mUI from '@/components'
+import mUI from '@/components'
 // 全量引入
 // import mUI from '../lib/index.es.js'
-import mUI from 'x-plus-components'
-import 'x-plus-components/style.css'
+// import mUI from 'x-plus-components'
+// import 'x-plus-components/style.css'
 
 //单独引入
 // import chooseIcon from '../lib/chooseIcon/index.es.js'
