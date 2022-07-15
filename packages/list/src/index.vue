@@ -14,7 +14,7 @@
                         <div class="content">
                             <div v-if="item1.title" class="title">
                                 <div>{{ item1.title }}</div>
-                                <el-tag v-if="item1.tag" size="small" :type="item1.tagType">{{ item1.tag }}</el-tag>
+                                <el-tag v-if="item1.tag" size="mini" :type="item1.tagType">{{ item1.tag }}</el-tag>
                             </div>
                             <div class="time" v-if="item1.desc">{{ item1.desc }}</div>
                             <div class="time" v-if="item1.time">{{ item1.time }}</div>
@@ -44,7 +44,7 @@
 <script setup lang="ts">
 import { PropType } from 'vue'
 import { ListOptions, ActionOptions, ListItem } from './types'
-import { toLine } from '../../../utils'
+import { toLine } from '../../utils'
 let props = defineProps({
   // 列表的内容
   list: {

@@ -6,7 +6,9 @@ import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 
 import { toLine } from './utils'
-import mUI from './components'
+// import mUI from '@/components'
+import mUI from '../lib/index.es.js'
+import '../lib/style.css'
 
 const app = createApp(App)
 // 全局注册element图标 ？是否合理
