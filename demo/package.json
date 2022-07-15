@@ -1,6 +1,6 @@
 {
   "name": "x-plus-components",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "基于element-plus二次封装的组件库",
   "main": "index.umd.js",
   "module": "index.es.js",
