@@ -7,7 +7,11 @@ import 'element-plus/dist/index.css'
 
 import { toLine } from './utils'
 // import mUI from '@/components'
+// 全量引入
 import mUI from '../lib/index.es.js'
+//单独引入
+// import chooseIcon from '../lib/chooseIcon/index.es.js'
+// import '../lib/chooseIcon/style.css'
 import '../lib/style.css'
 
 const app = createApp(App)
